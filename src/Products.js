@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import ProductCard from './ProductCard';
+import AddToCart from './components/AddToCart';
 
 // const products = [
 //     {
@@ -80,6 +81,7 @@ function Products() {
                             onChange={(e) => handleInputChange(item.id, e.target.value)} 
                         />
                         <p>{displayTexts[item.id]}</p>
+                        <AddToCart />
                     </div>
                 ))
             }
